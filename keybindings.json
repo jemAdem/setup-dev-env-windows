@@ -1,0 +1,203 @@
+[
+  {
+    "key": "alt+shift+m",
+    "command": "editor.action.refactor",
+    "when": "editorHasSelection && editorTextFocus"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.view.explorer",
+    "when": "editorTextFocus || terminalFocus"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "editorTextFocus || terminalFocus"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+d",  // kill/delete terminal
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },  
+  {
+    "key": "alt+r", // NOT WORKING
+    "command": "git.discardAllChangesInFile",
+    "when": "editorTextFocus && gitOpenRepositoryCount != 0"
+  },
+  {
+    "key": "alt+g",
+    "command": "editor.action.revealDefinition",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+q", // shortcut for copy qualified name
+    "command": "vscode-copy-fqn.copy-fqn",
+    "when": "editorTextFocus && editorLangId == 'java'"
+  },
+  // Remove the default Ctrl+1 binding (focuses the first editor group)
+  {
+    "key": "ctrl+1",
+    "command": "-workbench.action.focusFirstEditorGroup"
+  },
+  // Bind Ctrl+1 to Quick Fix / Code Action
+  {
+    "key": "ctrl+1",
+    "command": "editor.action.quickFix",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+a",
+    "command": "editor.debug.action.selectionToWatch"
+  },
+  {
+    "key": "alt+c",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+ctrl+s",
+    "command": "workbench.action.openGlobalSettings"
+  },
+  {
+    "key": "alt+ctrl+shift+e",
+    "command": "workbench.action.export"
+  },
+  {
+    "key": "alt+ctrl+shift+s",
+    "command": "workbench.action.openGlobalSettings"
+  },
+  {
+    "key": "alt+d",
+    "command": "java.view.typeHierarchy",
+    "when": "editorTextFocus && editorLangId == 'java'"
+  },
+  {
+    "key": "alt+f",
+    "command": "editor.action.nextSelectionMatchFindAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "alt+s",
+    "command": "editor.action.previousSelectionMatchFindAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+x",
+    "command": "editor.action.referenceSearch.trigger"
+  },
+  {
+    "key": "alt+y",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.files.action.refreshFilesExplorer"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+shift+7",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+f6",
+    "command": "editor.action.rename"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+oem_period",
+    "command": "editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+oem_period",
+    "command": "editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "ctrl+alt+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "-editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  }
+]
